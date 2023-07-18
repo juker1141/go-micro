@@ -1,7 +1,7 @@
 */db-data
 
 .idea/
-.DS_Store
+*/.DS_Store
 output/
 
 # Binaries for programs and plugins
