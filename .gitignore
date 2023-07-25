@@ -19,9 +19,9 @@ output/
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
-*brokerApp
-*authApp
-*loggerServiceApp
-*frontApp
-*mailerApp
-*listenerApp
+brokerApp
+authApp
+loggerServiceApp
+frontApp
+mailerApp
+listenerApp
