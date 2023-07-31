@@ -65,7 +65,7 @@
         };
 
         try {
-            const data = await fetch("http:\/\/localhost:8080/handle", body)
+            const data = await fetch({{print .BrokerURL "/handle"}}, body)
                 .then((res) => res.json());
             
             sent.innerHTML = JSON.stringify(payload, undefined, 4);
@@ -100,7 +100,7 @@
         };
 
         try {
-            const data = await fetch("http:\/\/localhost:8080/log-grpc", body)
+            const data = await fetch({{print .BrokerURL "/log-grpc"}}, body)
                 .then((res) => res.json());
             
             sent.innerHTML = JSON.stringify(payload, undefined, 4);
@@ -136,7 +136,7 @@
         };
 
         try {
-            const data = await fetch("http:\/\/localhost:8080/handle", body)
+            const data = await fetch({{print .BrokerURL "/handle"}}, body)
                 .then((res) => res.json());
             
             sent.innerHTML = JSON.stringify(payload, undefined, 4);
@@ -171,7 +171,7 @@
         };
 
         try {
-            const data = await fetch("http:\/\/localhost:8080/handle", body)
+            const data = await fetch({{print .BrokerURL "/handle"}}, body)
                 .then((res) => res.json());
             
             sent.innerHTML = JSON.stringify(payload, undefined, 4);
@@ -191,7 +191,7 @@
         };
 
         try {
-            const data = await fetch("http:\/\/localhost:8080", body)
+            const data = await fetch({{.BrokerURL}}, body)
                 .then((res) => res.json());
             
             sent.innerHTML = "empty post request";
