@@ -14,7 +14,7 @@ services:
       - caddy_config:/config
 
   front-end:
-    image: ryu9527/front-end:1.0.6
+    image: ryu9527/front-end:1.0.1
     deploy:
       mode: replicated
       replicas: 1
